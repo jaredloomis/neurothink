@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+seaborn = "*"
+jupyter = "*"
+scikit-learn = "*"
+scipy = "*"
+nltk = "*"
+twitter = "*"
+twython = "*"
+torch = "*"
+pylsl = "*"
+scikit-image = "*"
+vispy = "*"
+mne = "*"
+bluepy = "*"
+pygatt = "*"
+pexpect = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
