@@ -4,23 +4,26 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+jupyter = "*"
 numpy = "*"
 pandas = "*"
 seaborn = "*"
-jupyter = "*"
 scikit-learn = "*"
 scipy = "*"
 nltk = "*"
-twitter = "*"
 twython = "*"
 torch = "*"
+#torch = {index = "pytorch", version = "*"}
 pylsl = "*"
 scikit-image = "*"
 vispy = "*"
-mne = "*"
 bluepy = "*"
 pygatt = "*"
 pexpect = "*"
+fooof = {file = "https://github.com/fooof-tools/fooof/archive/refs/tags/v1.0.0.zip"}
+mne = "*"
+#keras = "*"
+tensorflow = ">=2.0.0"
 
 [dev-packages]
 
