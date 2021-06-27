@@ -13,7 +13,6 @@ scipy = "*"
 nltk = "*"
 twython = "*"
 torch = "*"
-#torch = {index = "pytorch", version = "*"}
 pylsl = "*"
 scikit-image = "*"
 vispy = "*"
@@ -22,8 +21,6 @@ pygatt = "*"
 pexpect = "*"
 fooof = {file = "https://github.com/fooof-tools/fooof/archive/refs/tags/v1.0.0.zip"}
 mne = "*"
-#keras = "*"
-tensorflow = ">=2.0.0"
 
 [dev-packages]
 
