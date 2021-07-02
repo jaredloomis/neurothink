@@ -12,7 +12,8 @@ In this notebook, I train a CNN to determine whether the wearer's eyes are open 
 
 Possible improvements:
 
-- Use FFT data as additional features (ie. feature per band per sample).
+- Use FFT data as additional features (ie. feature per band per sample). [example](https://www.kaggle.com/purplejester/pytorch-deep-time-series-classification)
+- Use stationary wavelet transform, as a better (?) alternative to FFT.
 - Experiment with network architectures.
 
 ## Basic thought detection
@@ -23,4 +24,4 @@ Here, I train a similar CNN to determine whether the wearer is thinking of the c
 
 ## Meditation coach
 
-Next, I'll make an attempt at training a network
+Next, I plan on trying to training a network to detect different states of meditation, preferably with some notion of "meditation quality" baked into the training data and therefore the resulting network outputs.

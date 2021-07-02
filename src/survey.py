@@ -22,6 +22,7 @@ class Survey():
         self.schedule = schedule
         self.surveys_dir = surveys_dir
         self.next_step_audio = next_step_audio
+        self.handler_thread = ThreadPoolExecutor(max_workers=1)
         if next_step_audio:
             self.audio_player_thread = ThreadPoolExecutor(max_workers=2)
 
@@ -34,12 +35,22 @@ class Survey():
         
         # Iterate over each step in the schedule, record and save
         for step, step_i in zip(self.schedule, range(len(self.schedule))):
-            duration, tag, description, record = step
+            if len(step) == 4:
+                duration, tag, description, record = step
+                handler = lambda: None
+            elif len(step) == 5:
+                duration, tag, description, record, handler = step
+            else:
+                raise Exception(f"Invalid schedule step: {step}")
+
             step_tag = str(step_i) + "_" + tag
 
             # Play audio to signal next step
             if self.next_step_audio:
                 self._play_next_step_audio(description)
+
+            # Execute custom handler function
+            self.handler_thread.submit(handler)
                 
             # Record stream or wait for specified duration
             if record:

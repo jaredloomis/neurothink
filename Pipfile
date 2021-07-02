@@ -22,6 +22,8 @@ pexpect = "*"
 fooof = {file = "https://github.com/fooof-tools/fooof/archive/refs/tags/v1.0.0.zip"}
 mne = "*"
 tqdm = "*"
+pywavelets = "*"
+opencv-python = "*"
 
 [dev-packages]
 
