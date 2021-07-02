@@ -1,6 +1,6 @@
 # neurothink
 
-neurothink is project exploring Muse 2 EEG data, with the goal being to classify wearer's thoughts/actions based on their EEG patterns.
+neurothink is project exploring Muse 2 EEG data.
 
 ![EEG 10-10 system](./data/EEG-10-10.png)
 
