@@ -16,11 +16,11 @@ Possible improvements:
 - Use stationary wavelet transform, as a better (?) alternative to FFT.
 - Experiment with network architectures.
 
-## Basic thought detection
+## Direction detection
 
 [notebook](./EEG/Muse-EEG-eyes-open.ipynb)
 
-Here, I train a similar CNN to determine whether the wearer is thinking of the concept of `left`, `right`, or neither. **In Progress.**
+Here, I train a similar CNN to determine whether the wearer is thinking of the concept of `left`, `right`, or `neither`. **In Progress.**
 
 ## Meditation coach
 
